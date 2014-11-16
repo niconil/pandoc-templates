@@ -87,6 +87,8 @@ $body$
         progress: true,
         history: true,
         center: true,
+        $if(autoSlide)$autoSlide: $autoSlide$,$endif$
+        $if(loop)$loop: true,$endif$
         theme: $if(theme)$'$theme$'$else$Reveal.getQueryHash().theme$endif$, // available themes are in /css/theme
         transition: $if(transition)$'$transition$'$else$Reveal.getQueryHash().transition || 'default'$endif$, // default/cube/page/concave/zoom/linear/fade/none
 
